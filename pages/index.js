@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import UserList from "../components/userlistbox";
 import GithubIcon from "../public/assets/github.png";
 import styles from "../styles/Home.module.scss";
 
@@ -18,6 +19,7 @@ export default function Home({ datausers }) {
         </h1>
         <h1> - Github API</h1>
       </div>
+      <UserList data={datausers} />
     </div>
   );
 }

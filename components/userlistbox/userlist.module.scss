@@ -1,0 +1,45 @@
+.userbox {
+  height: 500px;
+  width: 500px;
+  overflow-y: auto;
+  border-radius: 16px;
+  box-shadow: 0 0 10px 0px #ddd;
+  padding: 1em;
+  margin: 1em auto;
+
+  .item {
+    cursor: pointer;
+    padding: 1em 0;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    transition: 0.2s all ease-in;
+    &:hover {
+      background-color: #eee;
+      padding: 1em;
+      .info {
+        .confirm {
+          height: auto;
+        }
+      }
+    }
+    .imageUser {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      margin-right: 1em;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+    .info {
+      .confirm {
+        color: #aaa;
+        height: 0;
+        overflow: hidden;
+        transition: 0.2s all ease-in;
+      }
+    }
+  }
+}
